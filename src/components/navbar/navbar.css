@@ -1,0 +1,40 @@
+.navbar{
+    width: 100%;
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navicons{
+    backdrop-filter: blur(15px);
+    background: rgba(9, 29, 27);
+    border-radius: 4rem;
+    bottom: 2rem;
+    display: block;
+    gap: 0.8rem;
+    left: 50%;
+    padding: 0.7rem 1.7rem;
+    position: fixed;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: -webkit-max-content;
+    width: max-content;
+    z-index: 2;
+}
+
+.navicons>*{
+    padding: 2rem;
+    border-radius: 50%;
+    /*  */
+    
+    font-size: 6rem;
+    color: rgb(216, 203, 203);
+    cursor: pointer;
+}
+
+.navicons  :hover{
+    /* background-color: rgb(34, 33, 33); */
+    background-color:#3e7459;
+}

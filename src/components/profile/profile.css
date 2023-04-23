@@ -1,0 +1,12 @@
+.profile{
+    position: fixed;
+    left: 7rem;
+    top:3.5rem;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.profile>img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
