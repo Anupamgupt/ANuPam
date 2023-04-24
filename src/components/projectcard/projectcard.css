@@ -1,0 +1,80 @@
+
+.card{
+    width: 330px;
+    background-color: #ffffffe3;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 255, 0.2);
+    cursor: pointer;
+    z-index: 2;
+}
+.card2{
+    background-color: white;
+}
+.card-img-container{
+    /* margin: 1rem; */
+    background-color: hsla(0, 10%, 17%, 0.2);
+    padding: 1rem 1rem 0 1rem;
+    /* background-color: green; */
+    /* height: 300px; */
+    
+    border-radius: 5px;
+}
+.card-img-cont{
+    /* background-color: red; */
+    padding: 1rem;
+    /* padding-top: 3rem; */
+    overflow: hidden;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.card-img{
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
+    /* padding: 1rem; */
+    /* padding-top: 2rem; */
+}
+.atg-head{
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+.atg-para{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    opacity: 0.7;
+    padding-top: 1rem;
+}
+.atg-para2{
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: left;
+    height: fit-content;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+.card-button{
+    padding-top: 2rem;
+}
+.card-button> button{
+    cursor: pointer;
+    padding: 1rem 2rem;
+    background-color: rgb(34, 90, 92);
+    border: none ;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 0px 0px 5px  black;
+    /* box-shadow: 0 0 1px 10px ; */
+}
+.card-button> button:hover{
+    background-color: rgb(39, 74, 75);
+}
+.github-button{
+    margin-left: 1rem;
+}

@@ -1,7 +1,7 @@
 .navbar{
     width: 100%;
     position: absolute;
-    bottom: 2rem;
+    /* bottom: 2rem; */
     display: flex;
     align-items: center;
     justify-content: center;

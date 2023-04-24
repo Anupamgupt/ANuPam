@@ -11,11 +11,13 @@ function Landing() {
       <Profile/>
       <div className="landingtop">
         <div>
+        <a href='https://drive.google.com/file/d/1x5OSp31HlrXjALFdp-k5B7HENTbQFxLh/view?usp=sharing' target='_blank'>
           <button className='download'>
-            <a href='https://drive.google.com/file/d/1x5OSp31HlrXjALFdp-k5B7HENTbQFxLh/view?usp=sharing' target='_blank'>
+          
             Resume
-            </a>
+           
           </button>
+          </a>
           <button className='talk'>Let's Talk</button>
         </div>
       </div>
