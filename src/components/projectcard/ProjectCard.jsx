@@ -4,7 +4,7 @@ import acrossPic from '../../assets/images/acrossPic.png'
 function ProjectCard() {
   return (
     <div className='project-card'>
-        <div className="card">
+        <div className="card card3">
             <div className='card-img-container'>
             <div className="card-img-cont">
                 <img src={acrossPic} className='card-img'/>

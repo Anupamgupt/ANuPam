@@ -1,4 +1,6 @@
 .skills{
+    margin: auto;
+    max-width: 1400px;
     padding: 3rem;
     width: 100%;
     display: flex;
@@ -10,9 +12,161 @@
     /* height: 100vh; */
     /* padding-bottom:10rem ; */
     max-height: 940rem;
+    background-color: white !important;
     /* background-color: rgb(25, 23, 27); */
     background: linear-gradient(#00504a,#064945);  
 }
 .main_exp3{
     color: white;
+}
+
+.main_skill{
+    color: white !important;
+    border-color: white !important;
+}
+
+.skill-cont{
+   
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.main_exp{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 40%; */
+    padding: 1rem 3rem;
+    cursor: pointer;
+    /* font-size: 1.7rem; */
+    /* margin: 0px 1rem; */
+    border-radius: 3rem;  
+    background-color: transparent;
+    color:rgb(60, 90, 80) ;
+    border: 1.5px solid rgb(60, 90, 80);
+    /* transition: all 0.5s ease-in-out; */
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.port{
+    font-size: 5rem;
+    font-weight: 500;
+    padding-top: 2rem;
+    
+}
+.sub-skill{
+    /* background-color: aqua; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: left;
+    width: 90%;
+    /* padding-top: 0rem; */
+}
+.lineone_skill{
+    width: 9rem;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 1.5rem;
+}
+.skill_left{
+    flex: 1;
+    padding-top: 5rem;
+    padding-bottom: 12rem;
+    padding-left: 2rem;
+}
+.extime{
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding-top: 0.5rem;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+.skillcat{
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+.para_skill{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    padding-top: 2rem;
+    width: 70%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.skill_campany{
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 3rem;
+    font-size: 5.5rem;
+}
+.skill_right{
+    /* background-color: red; */
+    flex:1;
+    margin-top: 4rem;
+}
+
+.sub-skillright{
+    display: none;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /* background-color: aqua; */
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.skill_buttons{
+    display: flex;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: center;
+    /*  */
+}
+.skill_sub_button{
+    background-color: rgb(59, 139, 131);
+    padding: 1rem;
+    border-radius: 3rem;
+    /* background-color: red; */
+    display: flex;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.skill_buttons button{
+   
+    cursor: pointer;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    background-color: inherit;
+    transition: all 0.1s ease-in ;
+    border: none;
+    /* color: white; */
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    /* box-shadow: 0px 0px 5px black; */
+}
+
+.dev_but{
+    background-color: #00504a !important;
+    color: white !important;
+}
+.skill_div{
+    padding: 3rem;
+    gap:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }

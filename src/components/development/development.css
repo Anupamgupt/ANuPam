@@ -1,0 +1,16 @@
+.card_skill{
+    width: 80px;
+    height: 82px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: rgba(214, 233, 233,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_skill img{
+    width: 45px;
+    /* background-color: white; */
+}
