@@ -6,7 +6,6 @@ import { Data } from '../../data/Data'
 function Experience() {
   return (
     <div className='experience'>
-        <Profile/>
         <div className='ex-cont'>
             <div className='main_exp'>EXPERIENCE</div>
             <h1 className='port'>PORTFOLIO OF MY WORK</h1>
@@ -26,10 +25,7 @@ function Experience() {
                     <ProjectCard/>
                 </div>
             </div>
-
         </div>
-        {/* Experience */}
-
     </div>
   )
 }

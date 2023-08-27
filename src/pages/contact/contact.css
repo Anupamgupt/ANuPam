@@ -1,18 +1,193 @@
 .contact{
     margin: auto;
     max-width: 1400px;
-    padding: 3rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 800px; */
-    min-height: 68.4rem;
-    /* height: 100%; */
-    /* height: 100vh; */
-    /* padding-bottom:10rem ; */
-    max-height: 940rem;
-    /* background-color: white !important; */
-    /* background-color: rgb(25, 23, 27); */
-    background: linear-gradient(#064945,black);  
+    background: linear-gradient(#00504a,rgb(12, 36, 32)); 
+    padding-bottom: 3rem; 
+    height: 100vh;
+}
+.main_contact{
+    color: white !important;
+    border-color: white !important;
+}
+
+.contact-cont{
+   
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 5rem; */
+    align-items: center;
+    justify-content: center;
+}
+.main_exp{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 3rem;  
+    background-color: transparent;
+    color:rgb(60, 90, 80) ;
+    border: 1.5px solid rgb(60, 90, 80);
+    font-weight: 500;
+    font-size: 2rem;
+}
+.contact-cont{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sub-contact{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    width: 90%;
+}
+.lineone_contact{
+    width: 9rem;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 1.5rem;
+}
+
+.contact_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding-top: 5rem;
+    padding-bottom: 12rem;
+    padding-left: 2rem;
+}
+.contactcat{
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+.para_contact{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+    padding-top: 2rem;
+    width: 70%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.contact_campany{
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 3rem;
+    font-size: 5.5rem;
+}
+.contact_right{
+    flex:1;
+    margin-top: 4rem;
+}
+
+.contact_icons{
+    display: flex;
+    gap: 2rem;
+}
+
+.contact_icons>*{
+    cursor: pointer;
+    margin-top: 3rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+input,textarea {
+    resize: none;
+    border: 1px solid rgb(33, 112, 84);
+    padding: 2rem;
+    background-color: transparent;
+    transition: 0.2s ease-in ;
+    width: 70%;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    outline: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+input::placeholder{
+    color: white;
+    opacity: 0.7;
+    font-family: 'Josefin Sans', sans-serif;
+}
+input:focus{
+    border: 1px solid rgb(45, 209, 152);
+}
+.text_area{
+    height: 15rem;
+    line-height: 2rem;
+}
+.text_area::placeholder{
+    color: white;
+    opacity: 0.7;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.text_area:focus{
+    border: 1px solid rgb(45, 209, 152);
+    resize: none;
+}
+.text_area::-webkit-scrollbar{
+    display: none;
+}
+
+.send{
+    display: flex;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 0.1rem solid transparent;
+    background-color: rgb(51, 196, 147);
+    color: white;
+    opacity: 0.8;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.send:hover{
+    background-color: transparent;
+    color:rgb(51, 196, 147) ;
+    border: 0.1rem solid rgb(51, 196, 147);
+    transition: all 0.5s ease-in-out;
+
+}
+
+@media screen and (max-width:600px){
+    .contact{
+        height: 100%;
+    }
+    .sub-contact{
+        flex-direction: column-reverse;
+    }
+    .contact_left{
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+    input,textarea{
+        width: 100%;
+    }
+    .para_contact{
+        width: 95%;
+    }
 }

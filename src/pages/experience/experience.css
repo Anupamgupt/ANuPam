@@ -1,10 +1,10 @@
 .experience{
     margin: auto;
     max-width: 1400px;
-    height: 100vh;
+    /* height: 100vh; */
     background: #faf9f9;
-    min-height: 68.4rem;
-    height: 100vh;
+    /* min-height: 68.4rem; */
+    /* height: 100vh; */
     /* height:700px; */
     display: flex;
     align-items: center;
@@ -46,7 +46,6 @@
 }
 .sub-ex{
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     text-align: left;
     width: 90%;
@@ -107,11 +106,41 @@
     height: 100%;
     overflow: hidden;
 }
-/* .circle{
-    margin-left: 80px;
-    margin-top: 100px;
-    width: 1000px;
-    height:1000px;
-    border-radius: 50%;
-    background-color: #00504a;
-} */
+@media screen and (max-width:600px){
+    .sub-ex{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .exleft{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-left: 0;
+        padding-bottom: 1rem;
+    }
+    .exright>*{
+        padding-left: 0;
+    }
+    .experience{
+        padding-bottom: 10rem;
+    }
+    .port{
+        font-size: 3rem !important;
+        padding: 1rem;
+    }   
+    .excampany{
+        font-size: 3rem;
+    }
+    .lineone{
+        display: none;
+    }
+    .excat {
+        font-size: 2.5rem;
+    }
+    .paraex{
+        width: 95%;
+    }
+}

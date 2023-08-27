@@ -1,0 +1,116 @@
+.container-intro{
+    top:0;
+    left: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    animation: anima1 3s 1 ease-in-out;
+}
+
+.top-intro,.bottom-intro{
+    background: black;
+    flex:1;
+    width: 100%;
+    animation: anima 3s 1 ease-in-out;
+}
+.center-intro{
+    flex:1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    opacity: 1;
+    background-color: rgb(13, 59, 45);
+    width: 100%;
+    color: white;
+    animation: anima2 2s 1 ease-in-out;
+    animation-delay: 1s;
+    
+}
+p{
+    position: absolute;
+}
+@keyframes anima{
+    20%{
+        flex: 1.3;
+    }
+    80%{
+        flex: 1.3;
+    }
+    100%{
+        flex: 0;
+        height: 0%;
+    }
+}
+@keyframes anu{
+
+    50%{
+        opacity: 0;
+        transform: translate(30px,30px);
+    }
+    100%{
+        transform: translate(0,0);
+        flex: 0;
+        height: 0%;
+    }
+}
+@keyframes anima1{
+    50%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes anima2{
+    30%{
+        font-size: 120px;
+    }
+    60%{
+        font-size: 120px;
+        opacity: 1;
+    }
+    95%{
+        font-size: 120px;
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .center{
+        font-size: 50px;
+    }
+    @keyframes anima{
+        20%{
+            flex: 1.9;
+        }
+        100%{
+            flex: 0;
+        }
+    }
+    @keyframes anima2{
+
+        50%{
+            visibility: visible;
+            font-size: 60px;
+        }
+        80%{
+            font-size: 60px;
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    
+}

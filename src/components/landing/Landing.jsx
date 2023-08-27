@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef, useEffect}  from "react";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import {
   SiLeetcode,
@@ -6,14 +6,66 @@ import {
   SiCodeforces,
   SiCodechef,
 } from "react-icons/si";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import "./landing.css";
 import Profile from "../profile/Profile";
+import { Link } from "react-router-dom";
 
 function Landing() {
+  gsap.registerPlugin(ScrollTrigger);
+  const ref = useRef(null);
+  useEffect(() => {
+    // const element = ref.current;
+    gsap.fromTo(
+      ".main_para",
+      {
+        y:'-5rem',
+        lineHeight:0,
+        opacity:0,
+      },
+      {
+        y:'0',
+        opacity:1,
+        lineHeight:"inherit",
+        duration: 2.5,
+        ease: "power3.out"
+      }
+    );
+  }, []);
+  useEffect(() => {
+    gsap.fromTo(
+      "#icon-one>*,.line-work,.line",
+      {
+        opacity:0,
+      },
+      {
+        y:'0',
+        opacity:1,
+        delay:0.5,
+        stagger: 0.1 ,
+      }
+    );
+  }, []);
+  useEffect(() => {
+    gsap.fromTo(
+      "#icon-two>*,.line-work,.line",
+      {
+        opacity:0,
+      },
+      {
+        y:'0',
+        opacity:1,
+        delay:0.5,
+        stagger: 0.1 ,
+     
+      }
+    );
+  }, []);
   return (
-    <div className="landing">
-      <Profile />
+    <div className="landing" ref={ref}>
+      {/* <Profile id="profile"/> */}
       <div className="landingtop">
         <div>
           <a
@@ -22,12 +74,14 @@ function Landing() {
           >
             <button className="download">Resume</button>
           </a>
-          <button className="talk">Let's Talk</button>
+          <Link to="/contact">
+            <button className="talk">Let's Talk</button>
+          </Link>
         </div>
       </div>
       <div className="landingcenter">
         <div className="contentLeft">
-          <div className="contIcons">
+          <div className="contIcons" id="icon-one">
             <a href="https://github.com/Anupamgupt" target="_blank">
               <AiFillGithub />
             </a>
@@ -56,13 +110,16 @@ function Landing() {
             web development frameworks or tackling complex algorithmic problems
             in competitive programming, I am always up for a challenge.
           </p>
-          <button className="projects">
-            Projects
-            <HiOutlineArrowNarrowRight />
-          </button>
+          <Link to="/projects">
+            <button className="projects">
+              Projects
+              <HiOutlineArrowNarrowRight />
+            </button>
+          </Link>
+        
         </div>
         <div className="contentLeft">
-          <div className="contIcons">
+          <div className="contIcons" id="icon-two">
             <a
               href="https://auth.geeksforgeeks.org/user/akgjune06/"
               target="_blank"

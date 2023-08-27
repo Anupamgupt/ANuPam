@@ -1,20 +1,15 @@
 .skills{
     margin: auto;
     max-width: 1400px;
-    padding: 3rem;
+    /* padding: 3rem; */
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 800px; */
-    min-height: 68.4rem;
-    /* height: 100%; */
+    /* min-height: 68.4rem; */
     /* height: 100vh; */
-    /* padding-bottom:10rem ; */
-    max-height: 940rem;
     background-color: white !important;
-    /* background-color: rgb(25, 23, 27); */
-    background: linear-gradient(#00504a,#064945);  
+    background: linear-gradient(#064945,#00504a);  
 }
 .main_exp3{
     color: white;
@@ -36,21 +31,15 @@
     justify-content: center;
 }
 .main_exp{
-   
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 40%; */
     padding: 1rem 3rem;
     cursor: pointer;
-    /* font-size: 1.7rem; */
-    /* margin: 0px 1rem; */
     border-radius: 3rem;  
     background-color: transparent;
     color:rgb(60, 90, 80) ;
     border: 1.5px solid rgb(60, 90, 80);
-    /* transition: all 0.5s ease-in-out; */
-    /* font-family: 'Josefin Sans', sans-serif; */
     font-weight: 500;
     font-size: 2rem;
 }
@@ -82,12 +71,7 @@
     padding-bottom: 12rem;
     padding-left: 2rem;
 }
-.extime{
-    font-size: 1.8rem;
-    line-height: 3rem;
-    padding-top: 0.5rem;
-    font-family: 'Josefin Sans', sans-serif; 
-}
+
 .skillcat{
     font-size: 3rem;
     line-height: 3rem;
@@ -98,7 +82,7 @@
     color: white;
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 1.9rem;
+    line-height: 2.1rem;
     padding-top: 2rem;
     width: 70%;
     font-family: 'Josefin Sans', sans-serif;
@@ -152,10 +136,8 @@
     background-color: inherit;
     transition: all 0.1s ease-in ;
     border: none;
-    /* color: white; */
     color: black;
     font-family: 'Josefin Sans', sans-serif;
-    /* box-shadow: 0px 0px 5px black; */
 }
 
 .dev_but{
@@ -169,4 +151,29 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+@media screen and (max-width:600px){
+    .sub-skill{
+        flex-direction: column-reverse;
+    } 
+    .skill_left  {
+        display: none;
+    }
+    .skill_right{
+        margin-top: 0;
+    }
+    .skill_sub_button{
+        gap:0px;
+    }
+    .skill_div{
+        padding-top: 2rem !important;
+        padding-left:0px ;
+        padding-right: 0px;
+    }
+    .skill_campany {
+        font-size: 3.5rem;
+    }
+    .para_skill{
+        width: 100%;
+    }
 }

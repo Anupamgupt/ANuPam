@@ -7,7 +7,7 @@
     border-radius: 5px;
     box-shadow: 0px 0px 12px 1px rgba(0, 0, 255, 0.2);
     cursor: pointer;
-    z-index: 2;
+    /* z-index: 2; */
     transition: all 0.3s ease-in-out;
 }
 .card2{
@@ -15,6 +15,7 @@
 }
 .card3:hover{
     transform: scale(1.05);
+    z-index: 2;
     /* transform: ; */
     transition: all 0.3s ease-in-out;
 }

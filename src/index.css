@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: 'WanoQuin-Thin Free PU', sans-serif; */
 }
 html{
   font-size: 10px;
@@ -11,13 +10,11 @@ html{
 @media screen and (max-width:1338px) {
   html{
     font-size: 9px;
-    /* display: none; */
   }
 }
 @media screen and (max-width:1208px) {
   html{
     font-size: 8px;
-    /* display: none; */
   }
 }
 @media screen and (max-width:943px){
@@ -28,5 +25,10 @@ html{
 @media screen and (max-width:799px){
   html{
     font-size:6px;
+  }
+}
+@media screen and (max-width:570px){
+  html{
+    font-size:10px;
   }
 }

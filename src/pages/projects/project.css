@@ -1,15 +1,9 @@
 .project-container{
     margin: auto;
     max-width: 1400px;
-    /* height: 100vh; */
-    padding: 10rem 0rem;
-    /* padding-bottom: 13rem; */
-    /* background: white; */
-    min-height: 98.4rem; 
-   /* height: 100vh; */
-    /* height:700px; */
-    
-    background: linear-gradient(#000,#00504a);
+    padding: 5rem 0rem;
+    min-height: 98.4rem;     
+    background: linear-gradient(#032523,#064945);  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,4 +23,10 @@
 .port2{
     color: white;
     padding-bottom: 4rem;
+}
+
+@media screen and (max-width:600px){
+    .port{
+        text-align: center;
+    }
 }
