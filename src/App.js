@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './App.css'
 import Navbar from './components/navbar/Navbar.jsx'
 import Experience from './pages/experience/Experience'
@@ -8,7 +8,11 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import Contact from './pages/contact/Contact'
 import Layout from './components/layout/Layout'
 
-function App() {
+
+function App() {  
+  // console.log(location)
+  // const dispatch = useDispatch();
+  
   return (
     <Router>
       <Navbar/>   

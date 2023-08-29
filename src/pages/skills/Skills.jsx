@@ -2,11 +2,20 @@ import "./skills.css";
 import { development, programming, tools } from "../../data/Data";
 import { useState } from "react";
 import Development from "../../components/development/Development";
+import Intro from "../../components/intro/Intro";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { page } from "../../store/NavSlice";
 
 function Skills() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(page("Skills"));
+  }, [dispatch]); 
   const [skill, setSkill] = useState("Development");
   return (
       <div className="skills">
+        <Intro/>
         <div className="skill-cont">
           <div className="main_exp main_skill">SKILLS</div>
           <h1 className="port port2">SKILLS AND SERVICES</h1>

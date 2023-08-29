@@ -10,8 +10,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import "./landing.css";
-import Profile from "../profile/Profile";
 import { Link } from "react-router-dom";
+import Intro from "../intro/Intro";
+
 
 function Landing() {
   gsap.registerPlugin(ScrollTrigger);
@@ -65,7 +66,7 @@ function Landing() {
   }, []);
   return (
     <div className="landing" ref={ref}>
-      {/* <Profile id="profile"/> */}
+      <Intro intro={"Portfolio"}/>
       <div className="landingtop">
         <div>
           <a
@@ -134,7 +135,9 @@ function Landing() {
               <SiCodechef />{" "}
             </a>
           </div>
-          <div className="line-work">works</div>
+          <Link to="/experience">
+            <div className="line-work">works</div>
+          </Link> 
           <div className="line line-two"></div>
         </div>
       </div>
