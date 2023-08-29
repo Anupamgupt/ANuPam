@@ -103,7 +103,7 @@ function Landing() {
         </div>
         <div className="content">
           <p className="main_para">
-            sdfjsdlkn klsnafjds fksjd in
+            MERN Stack Developer and Competitive Programmer
           </p>
           <p className="down_para">
             I am a fast learner and constantly seeking new opportunities to
