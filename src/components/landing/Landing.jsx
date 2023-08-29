@@ -70,7 +70,7 @@ function Landing() {
       <div className="landingtop">
         <div>
           <a
-            href="https://drive.google.com/file/d/1x5OSp31HlrXjALFdp-k5B7HENTbQFxLh/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Ypld4s9fjDPVqvZdCaAn1HOZP1hqAlhB/view?usp=sharing"
             target="_blank"
           >
             <button className="download">Resume</button>
